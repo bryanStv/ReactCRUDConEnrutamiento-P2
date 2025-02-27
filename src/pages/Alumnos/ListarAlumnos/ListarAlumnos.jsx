@@ -3,6 +3,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Alumnos = () => {
+    useEffect(() => {
+        document.title = "Lista de Alumnos";
+      }, []);
+
     return (
         <>
             <Link to="/">Volver al Inicio</Link>

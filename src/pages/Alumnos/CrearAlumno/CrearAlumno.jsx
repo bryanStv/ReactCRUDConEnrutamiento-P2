@@ -1,15 +1,19 @@
 import "./CrearAlumno.css"
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const CrearAlumno = () => {
-    return (
-        <>
-            <Link to="/">Volver al Inicio</Link>
-            <Crear />
-        </>
-    )
+  useEffect(() => {
+    document.title = "Crear Alumno";
+  }, []);
+
+  return (
+      <>
+          <Link to="/">Volver al Inicio</Link>
+          <Crear />
+      </>
+  )
 }
 
 function Crear(){

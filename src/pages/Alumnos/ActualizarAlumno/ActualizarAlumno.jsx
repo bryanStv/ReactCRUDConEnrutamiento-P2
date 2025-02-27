@@ -5,13 +5,17 @@ import { Link } from 'react-router-dom';
 import { BuscarAlumno } from '../../../components/Funcionalidades/BuscarAlumno';
 
 export const ActualizarAlumno = () => {
-    return (
-        <>
-            <Link to="/">Volver al Inicio</Link>
-            <h1>Actualizar Alumno</h1>
-            <Actualizar />
-        </>
-    )
+  useEffect(() => {
+    document.title = "Actualizar alumno";
+  }, []);
+
+  return (
+      <>
+          <Link to="/">Volver al Inicio</Link>
+          <h1>Actualizar Alumno</h1>
+          <Actualizar />
+      </>
+  )
 }
 
 function Actualizar(){
