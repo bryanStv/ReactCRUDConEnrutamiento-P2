@@ -29,10 +29,12 @@ function ListarAlumnos(){
                 {alumnos.length > 0 ? (
                     alumnos.map((alumno) => (
                         <div key={alumno.id} className="alumno">
+                            <h2>{alumno.id}</h2>
                             <p><b>Nombre:</b> {alumno.nombre} {alumno.apellido}</p>
                             <p><b>Correo:</b> {alumno.correo}</p>
                             <p><b>Teléfono:</b> {alumno.telefono}</p>
                             <p><b>Dirección:</b> {alumno.direccion}</p>
+                            <br />
                         </div>
                     ))
                 ) : (
