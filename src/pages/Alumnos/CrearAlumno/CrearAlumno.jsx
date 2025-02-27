@@ -9,10 +9,10 @@ export const CrearAlumno = () => {
   }, []);
 
   return (
-      <>
-          <Link to="/">Volver al Inicio</Link>
-          <Crear />
-      </>
+    <>
+        <Link to="/">Volver al Inicio</Link>
+        <Crear />
+    </>
   )
 }
 
