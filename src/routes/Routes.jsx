@@ -26,5 +26,4 @@ export const Routes = () => {
     );
   
     return <RouterProvider router={router} />;
-  };
-  
+};  
