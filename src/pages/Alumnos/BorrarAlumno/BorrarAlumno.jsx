@@ -1,14 +1,12 @@
 import "./BorrarAlumno.css"
 
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { BuscarAlumno } from "../../../components/Funcionalidades/BuscarAlumno";
 
 export const BorrarAlumno = () => {
-    useEffect(() => {
-        document.title = "Borrar Alumno";
-    }, []);
+    document.title = "Borrar Alumno";
 
     return (
         <>

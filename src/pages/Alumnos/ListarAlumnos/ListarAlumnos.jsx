@@ -3,9 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Alumnos = () => {
-    useEffect(() => {
-        document.title = "Lista de Alumnos";
-      }, []);
+    document.title = "Lista de Alumnos";
 
     return (
         <>

@@ -1,12 +1,10 @@
 import "./CrearAlumno.css"
 
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const CrearAlumno = () => {
-  useEffect(() => {
-    document.title = "Crear Alumno";
-  }, []);
+  document.title = "Crear Alumno";
 
   return (
     <>

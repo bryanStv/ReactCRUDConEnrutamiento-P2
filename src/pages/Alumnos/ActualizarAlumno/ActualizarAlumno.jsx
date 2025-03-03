@@ -1,13 +1,13 @@
 import './ActualizarAlumno.css'
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { BuscarAlumno } from '../../../components/Funcionalidades/BuscarAlumno';
 
 export const ActualizarAlumno = () => {
-  useEffect(() => {
-    document.title = "Actualizar alumno";
-  }, []);
+  const location = useLocation();
+  location.pathname;
+  document.title = "Actualizar alumno";
 
   return (
       <>
@@ -126,31 +126,3 @@ function Actualizar(){
     )
 
 }
-
-{/*<div className="formularioCrearAlumno">
-    <form onSubmit={actualizarFormulario}>
-        <label>ID:</label>
-        <input type="text" value={id} onChange={(e) => setId(e.target.value)}/>
-        <label>Nombre:</label>
-        <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/>
-        <br/>
-        <label>Apellido:</label>
-        <input type="text" value={apellido} onChange={(e) => setApellido(e.target
-        .value)}/>
-        <br/>
-        <label>Correo:</label>
-        <input type="email" value={correo} onChange={(e) => setCorreo(e.target
-        .value)}/>
-        <br/>
-        <label>Telefono:</label>
-        <input type="text" value={telefono} onChange={(e) => setTelefono(e.target
-        .value)}/>
-        <br/>
-        <label>Direccion:</label>
-        <input type="text" value={direccion} onChange={(e) => setDireccion(e.target
-        .value)}/>
-        <br/>
-        <button type="submit">Actualizar Alumno</button>
-        <button type="reset">Resetear</button>
-    </form>
-</div>*/}
